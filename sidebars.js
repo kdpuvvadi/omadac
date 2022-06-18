@@ -15,18 +15,18 @@ module.exports = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'installation/install',
+        id: 'install/install',
       },
       items: [
         {
           type: 'doc',
           label: "🧰 Manual Installation",
-          id: 'installation/install_manual',
+          id: 'install/install_manual',
         },
         {
           type: 'doc',
           label: "🛠 Install with Ansible",
-          id: 'installation/install_ansible',
+          id: 'install/install_ansible',
         },
       ],
     },

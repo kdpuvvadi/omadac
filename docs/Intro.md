@@ -8,9 +8,9 @@ Omada’s Software Defined Networking (SDN) platform integrates network devices,
 
 ## Deployment
 
-* [Installation](/docs/installation/install)
-  * [Manual Installation](/docs/installation/install_manual)
-  * [Deploy with Ansible](/docs/installation/install_ansible)
-* [Upgrade](/docs/upgrade/upgrade)
+* [install](/docs/install)
+  * [Manual Installation](/docs/install/install_manual)
+  * [Deploy with Ansible](/docs/install/install_ansible)
+* [Upgrade](/docs/upgrade/)
   * [Manual Upgrade](/docs/upgrade/upgrade_manual)
   * [Upgrade with Ansible](/docs/upgrade/upgrade_ansible)
