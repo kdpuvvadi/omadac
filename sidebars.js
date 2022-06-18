@@ -16,13 +16,13 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🛠 Install with Ansible",
-          id: 'installation/install_ansible',
+          label: "🧰 Manual Installation",
+          id: 'installation/install_manual',
         },
         {
           type: 'doc',
-          label: "🧰 Manual Installation",
-          id: 'installation/install_manual',
+          label: "🛠 Install with Ansible",
+          id: 'installation/install_ansible',
         },
       ],
     },
@@ -35,13 +35,13 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🛠 Upgrade with Ansible",
-          id: 'upgrade/upgrade_ansible',
+          label: "🧰 Manual Upgrade",
+          id: 'upgrade/upgrade_manual',
         },
         {
           type: 'doc',
-          label: "🧰 Manual Upgrade",
-          id: 'upgrade/upgrade_manual',
+          label: "🛠 Upgrade with Ansible",
+          id: 'upgrade/upgrade_ansible',
         },
       ],
     },
