@@ -27,12 +27,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/kdpuvvadi/omadac',
+            'https://github.com/kdpuvvadi/omadac/edit/main/',
         },
         blog: {
           showReadingTime: false,
           editUrl:
-          'https://github.com/kdpuvvadi/omadac',
+          'https://github.com/kdpuvvadi/blog/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
