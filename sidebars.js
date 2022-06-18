@@ -12,7 +12,11 @@ module.exports = {
       type: 'category',
       label: '⚙️ Installation',
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'installation/install',
+      },
       items: [
         {
           type: 'doc',
@@ -31,7 +35,11 @@ module.exports = {
       type: 'category',
       label: '⛭ Upgrade',
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'upgrade/upgrade',
+      },
       items: [
         {
           type: 'doc',
