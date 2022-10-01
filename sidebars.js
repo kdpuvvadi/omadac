@@ -54,5 +54,23 @@ module.exports = {
       ],
     },
 
+    {
+      type: 'category',
+      label: '🔒 SSL',
+      collapsible: true,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'upgrade/upgrade',
+      },
+      items: [
+        {
+          type: 'doc',
+          label: "⚿ SSL with minica",
+          id: 'ssl/minica',
+        },
+      ],
+    },
+
   ],
 };
