@@ -20,12 +20,12 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🧰 Manual Installation",
+          label: "🧰 Manual",
           id: 'install/install_manual',
         },
         {
           type: 'doc',
-          label: "🛠 Install with Ansible",
+          label: "🛠 Ansible",
           id: 'install/install_ansible',
         },
       ],
@@ -43,12 +43,12 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🧰 Manual Upgrade",
+          label: "🧰 Manual",
           id: 'upgrade/upgrade_manual',
         },
         {
           type: 'doc',
-          label: "🛠 Upgrade with Ansible",
+          label: "🛠 Ansible",
           id: 'upgrade/upgrade_ansible',
         },
       ],
@@ -61,12 +61,12 @@ module.exports = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'upgrade/upgrade',
+        id: 'ssl/ssl',
       },
       items: [
         {
           type: 'doc',
-          label: "⚿ SSL with minica",
+          label: "⚿ minica",
           id: 'ssl/minica',
         },
       ],
