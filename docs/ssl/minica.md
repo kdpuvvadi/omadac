@@ -66,6 +66,8 @@ To install freshly generated certificate,
 - Change `File Format` to `PEM`
 - Select `SSL Certificate` and `SSL Key` and Click save.
 
+![Omada Controller SSL Cert Selection](/img/omada-ssl-settings.png)
+
 ## Install CA Certificate
 
 To trust self generated Cert, we need to out CA certs to our systems root store.
