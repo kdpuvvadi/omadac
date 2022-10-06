@@ -86,7 +86,6 @@ sudo cp minica.pem /usr/local/share/ca-certificates/minica.pem
 
 ```bash
 sudo dnf install install ca-certificates
-sudo update-ca-trust force-enable
 sudo cp minica.pem /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust extract
 ```
