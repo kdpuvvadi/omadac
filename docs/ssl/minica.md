@@ -68,6 +68,16 @@ To install freshly generated certificate,
 
 ![Omada Controller SSL Cert Selection](/img/omada-ssl-settings.png)
 
+## Convert PEM certificate to PKCS/PFX/P12
+
+To convert `pem` certificate and key files to `pkcs`, run the following
+
+```shell
+openssl.exe pkcs12 -export -out minica.p12 -in minica.pem -inkey minica-key.pem -passout pass:password
+```
+
+> Replace `passowrd` at `pass:password` with the desired password or left it eampty to disable password.
+
 ## Install CA Certificate
 
 To trust self generated Cert, we need to out CA certs to our systems root store.
@@ -92,4 +102,5 @@ sudo cp minica.pem /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust extract
 ```
 
-> Reboot the controller and Systems to update and changes to take effect.
+> 1. Reboot the controller and Systems to update and changes to take effect.
+> 2. Replace minica.pem with `minica.p12` to use `pkcs`
