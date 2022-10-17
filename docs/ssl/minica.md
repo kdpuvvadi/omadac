@@ -102,5 +102,16 @@ sudo cp minica.pem /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust extract
 ```
 
-> 1. Reboot the controller and Systems to update and changes to take effect.
+### Firefox
+
+Firefox manages it's own store for certificates. To add certificates
+
+- Go to `about:preferences#privacy`.
+- Scrole down to `Certificates`.
+- Select `View Certificates`.
+- Select `Import`.
+- Select `PKCS` file `minica.p12`.
+- Enter the password or leave it empty if not applicable.
+
+> 1. Reboot the controller/PC/Browser to update and changes to take effect.
 > 2. Replace minica.pem with `minica.p12` to use `pkcs`
