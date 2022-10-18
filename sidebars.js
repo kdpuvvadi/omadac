@@ -69,6 +69,16 @@ module.exports = {
           label: "⚿ minica",
           id: 'ssl/minica',
         },
+        {
+          type: 'doc',
+          label: "⚿ mkcert",
+          id: 'ssl/mkcert',
+        },
+        {
+          type: 'doc',
+          label: "⚿ pkcs",
+          id: 'ssl/pkcs',
+        },
       ],
     },
 
