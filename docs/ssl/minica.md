@@ -5,18 +5,18 @@ title: SSL certificates with minica
 
 ## Intro
 
-Remove SSL sign signed certificate warning with local CA(Cerificate Authority) with [minica](https://github.com/jsha/minica).
+Remove SSL sign signed certificate warning with local CA(Certificate Authority) with [minica](https://github.com/jsha/minica).
 
 ## Prerequisites
 
-minica written in [go](https://go.dev/) and can be installed with `go tools`. Install go by following instructins [here](https://go.dev/doc/install).
+minica written in [go](https://go.dev/) and can be installed with `go tools`. Install go by following instructions [here](https://go.dev/doc/install).
 
 ## Install minica
 
 Install with `go tools`
 
 ```shell
-go install github.com/jsha/minica@latest
+go install github.com/kdpuvvadi/minica@latest
 ```
 
 Install with `HomeBrew`
@@ -76,7 +76,7 @@ To convert `pem` certificate and key files to `pkcs`, run the following
 openssl.exe pkcs12 -export -out minica.p12 -in minica.pem -inkey minica-key.pem -passout pass:password
 ```
 
-> Replace `passowrd` at `pass:password` with the desired password or left it eampty to disable password.
+> Replace `password` at `pass:password` with the desired password or left it empty to disable password.
 
 ## Install CA Certificate
 
@@ -107,7 +107,7 @@ sudo update-ca-trust extract
 Firefox manages it's own store for certificates. To add certificates
 
 - Go to `about:preferences#privacy`.
-- Scrole down to `Certificates`.
+- Scroll down to `Certificates`.
 - Select `View Certificates`.
 - Select `Import`.
 - Select `PKCS` file `minica.p12`.
