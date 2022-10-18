@@ -31,7 +31,7 @@ sudo zypper install mozilla-nss-tools # openSUSE
 
 `mkcert` is cross-platform tool so, it can be installed on most of the boxes.
 
-### `Homebrew`
+### Homebrew
 
 mkcert can be install on `Mac OS` and `Linux` using `homebrew`
 
@@ -103,6 +103,20 @@ This will generate and install certificate in system root store.
 
 ```shell
 The local CA is now installed in the system trust store! ⚡️
+```
+
+To check the location of CA, run
+
+```shell
+mkcert -CAROOT
+```
+
+Defaults are
+
+```bash
+$env:LOCALAPPDATA # Windows
+~/.local/share/mkcert # Linux
+~/Library/Application Support/mkcert # Mac OS
 ```
 
 ### Certificate for Controller
