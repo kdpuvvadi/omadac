@@ -16,3 +16,4 @@ Omada’s Software Defined Networking (SDN) platform integrates network devices,
   * [Upgrade with Ansible](/docs/upgrade/upgrade_ansible)
 * [SSL](/docs/ssl/)
   * [minica](/docs/ssl/minica)
+  * [mkcert](/docs/ssl/mkcert)
