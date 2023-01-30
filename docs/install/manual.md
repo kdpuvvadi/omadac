@@ -68,11 +68,13 @@ sudo yum install curl -y
 
 ### Download the controller
 
-As of this writing latest version of the controller is `v5.3.1`. Create a directory, Download the install and extract the installer from the tarball.
+As of this writing latest version of the controller is `v5.8.4`. Create a directory, Download the install and extract the installer from the tarball.
+
+> Check for latest version on [TP-Link Download center](https://www.tp-link.com/en/support/download/omada-software-controller/v5/)
 
 ```bash
 mkdir omada -m 0755
-curl -L https://static.tp-link.com/upload/software/2022/202205/20220507/Omada_SDN_Controller_v5.3.1_Linux_x64.tar.gz | tar -xz -C omada/ --strip-components=1
+curl -L https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz | tar -xz -C omada/ --strip-components=1
 ```
 
 Change the current directory to `omada`.

@@ -28,7 +28,7 @@ To download old version visit [https://www.tp-link.com/en/support/download/omada
 
 ```bash
 mkdir ~/omada-old -m 0755
-curl -L https://static.tp-link.com/upload/software/2022/202203/20220322/Omada_SDN_Controller_v5.1.7_Linux_x64.tar.gz | tar -xz -C ~/omada-old/ --strip-components=1
+curl -L https://static.tp-link.com/upload/software/2022/202211/20221121/Omada_SDN_Controller_v5.7.4_Linux_x64.tar.gz | tar -xz -C ~/omada-old/ --strip-components=1
 ```
 
 ## Uninstall
@@ -67,7 +67,7 @@ Download and extract latest version of the controller with following.
 
 ```bash
 mkdir ~/omada-new -m 0755
-curl -L https://static.tp-link.com/upload/software/2022/202205/20220507/Omada_SDN_Controller_v5.3.1_Linux_x64.tar.gz | tar -xz -C ~/omada-new/ --strip-components=1
+curl -L https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz | tar -xz -C ~/omada-new/ --strip-components=1
 ```
 
 ## Upgrade
