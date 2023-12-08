@@ -42,6 +42,6 @@
   "engines": {
     "node": ">=18.0"
   },
-  "packageManager": "yarn@1.22.21",
+  "packageManager": "yarn@1.22.19",
   "description": "omadac project"
 }
