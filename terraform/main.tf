@@ -8,6 +8,13 @@ terraform {
       version = "4.20.0"
     }
   }
+  cloud {
+    organization = "KDPuvvadi"
+
+    workspaces {
+      name = "omadac"
+    }
+  }
 }
 
 data "cloudflare_accounts" "cloudflare_account_data" {
