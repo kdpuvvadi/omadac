@@ -61,14 +61,14 @@ resource "cloudflare_pages_project" "omadac_pages_project" {
     preview {
       environment_variables = {
         NODE_VERSION = "18.19.0"
-        YARN_VERSION  = "1.22.19"
+        YARN_VERSION = "1.22.19"
       }
       fail_open = true
     }
     production {
       environment_variables = {
         NODE_VERSION = "18.19.0"
-        YARN_VERSION  = "1.22.19"
+        YARN_VERSION = "1.22.19"
       }
       fail_open = true
     }
