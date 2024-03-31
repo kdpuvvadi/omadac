@@ -22,13 +22,13 @@ Stop successfully.
 
 ## Download old installer
 
-To make a complete backup before uninstall, current version installer is needed. Create a directory, download the installer and extract the installer from the tarball.
+To make a complete backup before uninstall, current version installer is needed. Create a directory, download the installer and extract the installer from the tar ball.
 
 To download old version visit [https://www.tp-link.com/en/support/download/omada-software-controller/](https://www.tp-link.com/en/support/download/omada-software-controller/)
 
 ```bash
 mkdir ~/omada-old -m 0755
-curl -L https://static.tp-link.com/upload/software/2022/202211/20221121/Omada_SDN_Controller_v5.7.4_Linux_x64.tar.gz | tar -xz -C ~/omada-old/ --strip-components=1
+curl -L https://static.tp-link.com/upload/software/2023/202309/20230920/Omada_SDN_Controller_v5.12.7_linux_x64.tar.gz | tar -xz -C ~/omada-old/ --strip-components=1
 ```
 
 ## Uninstall
@@ -67,7 +67,7 @@ Download and extract latest version of the controller with following.
 
 ```bash
 mkdir ~/omada-new -m 0755
-curl -L https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz | tar -xz -C ~/omada-new/ --strip-components=1
+curl -L https://static.tp-link.com/upload/software/2024/202402/20240227/Omada_SDN_Controller_v5.13.30.8_linux_x64.tar.gz | tar -xz -C ~/omada-new/ --strip-components=1
 ```
 
 ## Upgrade
