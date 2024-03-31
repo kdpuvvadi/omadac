@@ -199,7 +199,7 @@ docker compose up -d
 
 This will deploy the traefik container and completes `acme` challenge and generates certificate from `Let's Encrypt`. This config can be found on [GitHub](https://github.com/kdpuvvadi/homelab/tree/main/traefik).
 
-:::info
+:::note
 
 If anything goes wrong, check container logs.
 

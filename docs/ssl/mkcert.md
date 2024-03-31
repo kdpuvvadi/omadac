@@ -156,8 +156,9 @@ The legacy PKCS#12 encryption password is the often hardcoded default "changeit"
 
 It will expire on 18 January 2025 🗓
 ```
-
-> Default password for `pkcs` certificate is `changeit`.
+:::note
+Default password for `pkcs` certificate is `changeit`.
+:::
 
 ## Install certificate
 
@@ -184,4 +185,6 @@ Firefox manages it's own store for certificates. To add certificates
 - Select `PKCS` file `192.168.0.2.p12`.
 - Enter the password or leave it empty if not applicable.
 
-> 1. Reboot the controller/PC/Browser to update and changes to take effect.
+:::note
+Reboot the controller/PC/Browser to update and changes to take effect.
+:::

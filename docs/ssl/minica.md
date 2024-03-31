@@ -45,7 +45,9 @@ minica -ip-addresses 192.168.0.2
 
 Here `192.168.0.2` is the ip address of the controller.
 
-> Replace `ip` with actual controller's ip address.
+:::note
+Replace `ip` with actual controller's ip address.
+:::
 
 Directory structure would look like this
 
@@ -75,8 +77,9 @@ To convert `pem` certificate and key files to `pkcs`, run the following
 ```shell
 openssl.exe pkcs12 -export -out minica.p12 -in minica.pem -inkey minica-key.pem -passout pass:password
 ```
-
-> Replace `password` at `pass:password` with the desired password or left it empty to disable password.
+:::note
+Replace `password` at `pass:password` with the desired password or left it empty to disable password.
+:::
 
 ## Install CA Certificate
 
@@ -113,5 +116,7 @@ Firefox manages it's own store for certificates. To add certificates
 - Select `PKCS` file `minica.p12`.
 - Enter the password or leave it empty if not applicable.
 
-> 1. Reboot the controller/PC/Browser to update and changes to take effect.
-> 2. Replace minica.pem with `minica.p12` to use `pkcs`
+:::note
+- Reboot the controller/PC/Browser to update and changes to take effect.
+- Replace minica.pem with `minica.p12` to use `pkcs`
+:::

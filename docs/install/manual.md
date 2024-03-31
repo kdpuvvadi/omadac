@@ -70,7 +70,9 @@ sudo yum install curl -y
 
 As of this writing latest version of the controller is `v5.13.30.8`. Create a directory, Download the install and extract the installer from the tar ball.
 
-> Check for latest version on [TP-Link Download centre](https://www.tp-link.com/en/support/download/omada-software-controller/v5/)
+:::note
+Check for latest version on [TP-Link Download centre](https://www.tp-link.com/en/support/download/omada-software-controller/v5/)
+:::
 
 ```bash
 mkdir omada -m 0755
