@@ -1,0 +1,5 @@
+.docusaurus
+build
+.github/workflows
+node_modules
+terraform
