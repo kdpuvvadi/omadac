@@ -58,7 +58,7 @@ module.exports = {
       type: 'category',
       label: '🔒 SSL',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'doc',
         id: 'ssl/ssl',
@@ -81,6 +81,11 @@ module.exports = {
         },
       ],
     },
-
+    
+    {
+      type: 'doc',
+      id: 'traefik',
+      label: '🚧 traefik',
+    },
   ],
 };
