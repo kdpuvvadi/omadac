@@ -144,7 +144,7 @@ It will expire on 18 January 2025 🗓
 mkcert -pkcs12 192.168.0.2
 ```
 
-Output should be something similor
+Output should be something similar
 
 ```shell
 Created a new certificate valid for the following names 📜
@@ -163,7 +163,7 @@ It will expire on 18 January 2025 🗓
 
 To install freshly generated certificate,
 
-- goto `Controller Settings` >> `Controller` >> `HTTPS Certificate`
+- go to `Controller Settings` >> `Controller` >> `HTTPS Certificate`
 - Change `File Format` to `PEM`
 - Select `SSL Certificate` and `SSL Key` and Click save.
 

@@ -13,7 +13,7 @@ git clone https://github.com/kdpuvvadi/omada-upgrade-ansible.git && cd omada-ans
 
 * Copy inventory sample file `cp inventory.ini.j2 inventory.ini`
 * Change the ip address with actual IP address of the host server.
-* Copy varible file with `cp vars.yml.j2 vars.ini`
+* Copy variable file with `cp vars.yml.j2 vars.ini`
 
 ## Setup Ansible
 
@@ -54,7 +54,7 @@ ansible-playbook main.yml -K
 
 ## Post Installation
 
-If playbook run was successfull and didn't encounter any error, controller will be install and Omada controller will be available on `http://HOST-IP:8088/` or `https://HOST-IP:8043/`.
+If playbook run was successful and didn't encounter any error, controller will be install and Omada controller will be available on `http://HOST-IP:8088/` or `https://HOST-IP:8043/`.
 
 ### Ports
 

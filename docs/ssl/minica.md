@@ -62,7 +62,7 @@ project
 
 To install freshly generated certificate,
 
-- goto `Controller Settings` >> `Controller` >> `HTTPS Certificate`
+- go to `Controller Settings` >> `Controller` >> `HTTPS Certificate`
 - Change `File Format` to `PEM`
 - Select `SSL Certificate` and `SSL Key` and Click save.
 
