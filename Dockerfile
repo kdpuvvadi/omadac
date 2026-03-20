@@ -1,4 +1,4 @@
-FROM node:lts as base
+FROM node:lts AS base
 
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
