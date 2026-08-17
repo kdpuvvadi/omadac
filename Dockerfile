@@ -2,13 +2,14 @@ FROM node:lts AS base
 
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
+ENV NODE_OPTIONS=--disable-warning=DEP0169
 
 WORKDIR /app
 
 COPY ./package.json /app/package.json
 COPY ./yarn.lock /app/yarn.lock
 
-RUN yarn install
+RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn build
 
