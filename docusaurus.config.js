@@ -8,7 +8,11 @@ const config = {
   url: 'https://omadac.puvvadi.me/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
 
   organizationName: 'kdpuvvadi',
