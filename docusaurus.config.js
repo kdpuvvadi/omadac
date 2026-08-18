@@ -1,22 +1,31 @@
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+// @ts-check
+// See https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'OmadaC',
   tagline: 'Deploy Omada Controller',
-  url: 'https://omadac.puvvadi.me/',
+  favicon: 'img/favicon.ico',
+
+  future: {
+    v4: true,
+  },
+
+  url: 'https://omadac.puvvadi.me',
   baseUrl: '/',
+
+  organizationName: 'kdpuvvadi',
+  projectName: 'omadac',
+
   onBrokenLinks: 'throw',
+
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
   },
-  favicon: 'img/favicon.ico',
-
-  organizationName: 'kdpuvvadi',
-  projectName: 'omadac',
 
   i18n: {
     defaultLocale: 'en',
@@ -29,24 +38,19 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/kdpuvvadi/omadac/edit/main/',
+          sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/kdpuvvadi/omadac/edit/main/',
         },
-        blog: {
-          showReadingTime: false,
-          editUrl:
-          'https://github.com/kdpuvvadi/blog/edit/main/',
-        },
+        blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
   ],
 
   themeConfig:
-    // /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         defaultMode: 'dark',
@@ -61,15 +65,16 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Docs',
           },
           {
-            to: 'https://blog.puvvadi.me', 
-            label: 'Blog', 
-            position: 'left'},
+            href: 'https://blog.puvvadi.me',
+            label: 'Blog',
+            position: 'left',
+          },
           {
             href: 'https://github.com/kdpuvvadi/omadaC',
             label: 'GitHub',
@@ -84,54 +89,13 @@ const config = {
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       // {
-        //       //   label: 'Stack Overflow',
-        //       //   href: 'https://stackoverflow.com/questions/tagged/kdpuvvadi',
-        //       // },
-        //       // {
-        //       //   label: 'Discord',
-        //       //   href: 'https://discordapp.com/invite/kdpuvvadi',
-        //       // },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/kdpuvvadi',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       // {
-        //       //   label: 'Blog',
-        //       //   to: '/blog',
-        //       // },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/kdpuvvadi/',
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Copyright © ${new Date().getFullYear()} OmadaC   <a href='https://github.com/kdpuvvadi' target='_blank'>kdpuvvadi</a> and <a href='/docs/contributors'>contributors</a>.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;

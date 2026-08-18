@@ -1,11 +1,13 @@
-import React from 'react';
 import clsx from 'clsx';
+import AnsibleLogo from '@site/static/img/ansible_logo.svg';
+import SettingsGear from '@site/static/img/settings-gear.svg';
+import Motherboard from '@site/static/img/motherboard.svg';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
     title: 'Quick deploy',
-    Svg: require('@site/static/img/ansible_logo.svg').default,
+    Svg: AnsibleLogo,
     description: (
       <>
         Quick deploy TP-Link Omada Controller with Ansible & start configuring your network in few minutes.
@@ -14,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Manual installation',
-    Svg: require('@site/static/img/settings-gear.svg').default,
+    Svg: SettingsGear,
     description: (
       <>
         Want to install Omada controller manually? sure thing. Instruction are available in the documentation section.
@@ -23,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Upgrades',
-    Svg: require('@site/static/img/motherboard.svg').default,
+    Svg: Motherboard,
     description: (
       <>
         Want to upgrade existing controller to newer version?, upgrade either with ansible or manually.

@@ -1,13 +1,15 @@
-module.exports = {
-  
-  Sidebar: [
-    
+// @ts-check
+
+/**
+ * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
+ */
+const sidebars = {
+  docsSidebar: [
     {
       type: 'doc',
       id: 'intro',
       label: '🚀 Getting started',
     },
-
     {
       type: 'category',
       label: '⚙️ Installation',
@@ -20,17 +22,16 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🧰 Manual",
+          label: '🧰 Manual',
           id: 'install/install_manual',
         },
         {
           type: 'doc',
-          label: "🛠 Ansible",
+          label: '🛠 Ansible',
           id: 'install/install_ansible',
         },
       ],
     },
-
     {
       type: 'category',
       label: '⛭ Upgrade',
@@ -43,17 +44,16 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "🧰 Manual",
+          label: '🧰 Manual',
           id: 'upgrade/upgrade_manual',
         },
         {
           type: 'doc',
-          label: "🛠 Ansible",
+          label: '🛠 Ansible',
           id: 'upgrade/upgrade_ansible',
         },
       ],
     },
-
     {
       type: 'category',
       label: '🔒 SSL',
@@ -66,22 +66,21 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          label: "⚿ minica",
+          label: '⚿ minica',
           id: 'ssl/minica',
         },
         {
           type: 'doc',
-          label: "⚿ mkcert",
+          label: '⚿ mkcert',
           id: 'ssl/mkcert',
         },
         {
           type: 'doc',
-          label: "⚿ pkcs",
+          label: '⚿ pkcs',
           id: 'ssl/pkcs',
         },
       ],
     },
-    
     {
       type: 'doc',
       id: 'traefik',
@@ -89,3 +88,5 @@ module.exports = {
     },
   ],
 };
+
+export default sidebars;
