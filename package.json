@@ -57,7 +57,7 @@
     "express/path-to-regexp": "0.1.13",
     "follow-redirects": "^1.16.0",
     "http-proxy-middleware": "^2.0.10",
-    "joi": "^17.13.4",
+    "joi": "^17.13.7",
     "js-yaml": "^4.1.1",
     "launch-editor": "^2.14.1",
     "lodash": "^4.17.23",
