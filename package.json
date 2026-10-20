@@ -55,7 +55,7 @@
     "cross-spawn": "^7.0.5",
     "estree-util-value-to-estree": "^3.3.3",
     "express/path-to-regexp": "0.1.13",
-    "follow-redirects": "^1.16.0",
+    "follow-redirects": "^1.16.1",
     "http-proxy-middleware": "^2.0.10",
     "joi": "^17.13.4",
     "js-yaml": "^4.1.1",
