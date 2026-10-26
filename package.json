@@ -59,7 +59,7 @@
     "http-proxy-middleware": "^2.0.10",
     "joi": "^17.13.4",
     "js-yaml": "^4.1.1",
-    "launch-editor": "^2.14.1",
+    "launch-editor": "^2.14.2",
     "lodash": "^4.17.23",
     "mdast-util-to-hast": "^13.2.1",
     "micromatch": "^4.0.8",
